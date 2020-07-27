@@ -1,0 +1,205 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.mainpage {
+  background-image: url("https://i2.wp.com/spicecravings.com/wp-content/uploads/2017/08/Palak-Paneer-5.jpg");
+
+  margin: 2rem 0;
+
+  background-position: center;
+
+  background-size: cover;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  font-family: "billabong";
+  text-align: center;
+  font-size: 10rem;
+  font-weight: 100;
+  margin: 0.2rem 0;
+  letter-spacing: -1px;
+  color: black;
+}
+h2 {
+  font-family: "billabong";
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 0.2rem 0;
+  letter-spacing: -1px;
+  color: black;
+  flex: 20%;
+}
+
+h3 {
+  font-family: "billabong";
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0.2rem 0;
+  letter-spacing: -1px;
+  color: black;
+}
+
+@font-face {
+  font-family: "billabong";
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff")
+      format("woff"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf")
+      format("truetype"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular")
+      format("svg");
+}
+
+.photoGridmain {
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  height: 300px;
+  width: 299px;
+  margin: 0.1rem 0.1rem 0.2rem 0.2rem;
+}
+
+.infodiv {
+  columns: 100px 3;
+  column-gap: 80px;
+  column-rule: 4px double #ff00ff;
+  display: flex;
+  
+  color: #ff00ff;
+}
+
+
+.menudiv {
+  columns: 100px 2;
+  column-gap: 40px;
+  column-rule: 4px double #ff00ff;
+  display: flex;
+}
+
+.photoGrid {
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 80%;
+}
+
+.figure {
+  flex-basis: calc(33.333% - 4rem);
+  border: 1px solid #d3d3d3;
+  padding: 1rem;
+  flex-grow: 1;
+  margin: 0 0rem 0rem 0rem;
+}
+
+.menuimage {
+  height: 200px;
+  width: 200px;
+  column-width: 60%;
+}
+
+.photo {
+  width: calc(100% + 4rem);
+  margin: -2rem 0rem 0rem -2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  flex-basis: 48%;
+  color: rgb(255, 0, 191);
+  font-size: 20px;
+
+  line-height: 2;
+  padding: 5px;
+}
+
+.addIcon {
+  margin: 20px auto;
+  display: table;
+  padding: 40px;
+  background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center
+    no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.form {
+  background: white;
+  margin: 0 auto;
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+
+.form button {
+  font-family: "sans-serif";
+  text-transform: uppercase;
+  background: #065784;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  flex: 20%;
+}
+.form button:hover {
+  background: #7b8589;
+}
+
+button:hover {
+  border-color: blue;
+}
