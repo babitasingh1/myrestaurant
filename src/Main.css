@@ -51,6 +51,11 @@ h1 {
   letter-spacing: -1px;
   color: black;
 }
+
+.orderdiv {
+  flex: 20%;
+  background-color: rgb(194, 209, 209);
+}
 h2 {
   font-family: "billabong";
   text-align: center;
@@ -59,7 +64,6 @@ h2 {
   margin: 0.2rem 0;
   letter-spacing: -1px;
   color: black;
-  flex: 20%;
 }
 
 h3 {
@@ -102,21 +106,20 @@ h3 {
   column-gap: 80px;
   column-rule: 4px double #ff00ff;
   display: flex;
-  
+
   color: #ff00ff;
 }
 
-
 .menudiv {
   columns: 100px 2;
-  column-gap: 40px;
-  column-rule: 4px double #ff00ff;
+  column-gap: 10px;
+  column-rule: 10px double #ff00ff;
   display: flex;
 }
 
 .photoGrid {
   max-width: 2000px;
-  margin: 0 auto;
+  margin: 0 1rem 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
   flex: 80%;
@@ -128,6 +131,7 @@ h3 {
   padding: 1rem;
   flex-grow: 1;
   margin: 0 0rem 0rem 0rem;
+  background-color: rgb(194, 209, 209);
 }
 
 .menuimage {
@@ -141,6 +145,11 @@ h3 {
   margin: -2rem 0rem 0rem -2rem;
 }
 
+.bottom {
+  position: fixed;
+  bottom: 0;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -149,7 +158,7 @@ h3 {
 .button {
   flex-basis: 48%;
   color: rgb(255, 0, 191);
-  font-size: 20px;
+  font-size: 40px;
 
   line-height: 2;
   padding: 5px;

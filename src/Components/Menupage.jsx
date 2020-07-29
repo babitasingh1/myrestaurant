@@ -1,12 +1,19 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 
-export default function Menupage(props) {
+export default function Menupage({
+  images,
+  amount,
+  orderedItems,
+  onClick,
+  onIncrease,
+  onDecrease,
+}) {
   return (
     <div>
       <h3>place your order here</h3>
       <div className="menudiv">
         <div className="photoGrid">
-          {props.images.map((image, index) => (
+          {images.map((image, index) => (
             <photogrid>
               <figure className="figure">
                 <img
@@ -24,7 +31,7 @@ export default function Menupage(props) {
                 <div className="button-container">
                   <button
                     onClick={() => {
-                      props.onClick(image, index, props.amount);
+                      onClick(image, index, amount);
                     }}
                   >
                     Add
@@ -33,10 +40,35 @@ export default function Menupage(props) {
               </figure>
             </photogrid>
           ))}
-          </div>
-
-          <h2 >Your order:{props.amount}</h2>
-        
+        </div>
+        <div className="orderdiv">
+          <h2>Your order: €{amount} </h2>
+          <ul>
+            {orderedItems.map((item, index) => (
+              <li>
+                {item.description}{" "}
+                <button
+                  className="sidebutton"
+                  onClick={() => {
+                    onIncrease(item, index, amount);
+                  }}
+                >
+                  +
+                </button>
+                <button
+                  className="sidebutton"
+                  onClick={() => {
+                    onDecrease(item, index, amount);
+                  }}
+                >
+                  -
+                </button>{" "}
+                {item.quantity}
+              </li>
+            ))}
+          </ul>
+          <h3 className="bottom">Subtotal: €{amount}</h3>
+        </div>
       </div>
     </div>
   );

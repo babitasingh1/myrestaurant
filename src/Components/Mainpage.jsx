@@ -1,18 +1,18 @@
 import React from "react";
 
-export default function Mainpage(props) {
+export default function Mainpage({ images, onMouseOver, onMouseOut }) {
   return (
     <div className="photoGridmain">
-      {props.images.map((image, index) => (
+      {images.map((image, index) => (
         <img
           className="image"
           src={image.image}
           alt={image.id}
           onMouseOver={() => {
-            props.onMouseOver(image, index);
+            onMouseOver(image, index);
           }}
           onMouseOut={() => {
-            props.onMouseOut(image, index);
+            onMouseOut(image, index);
           }}
           key={index}
           style={{
