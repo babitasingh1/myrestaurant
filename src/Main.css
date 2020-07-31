@@ -52,10 +52,7 @@ h1 {
   color: black;
 }
 
-.orderdiv {
-  flex: 20%;
-  background-color: rgb(194, 209, 209);
-}
+
 h2 {
   font-family: "billabong";
   text-align: center;
@@ -97,8 +94,8 @@ h3 {
 
 .image {
   height: 300px;
-  width: 299px;
-  margin: 0.1rem 0.1rem 0.2rem 0.2rem;
+  width: 295px;
+  margin: .1rem .1rem 0.2rem 0.2rem;
 }
 
 .infodiv {
@@ -112,7 +109,7 @@ h3 {
 
 .menudiv {
   columns: 100px 2;
-  column-gap: 10px;
+  column-gap: 0px;
   column-rule: 10px double #ff00ff;
   display: flex;
 }
@@ -123,6 +120,10 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   flex: 80%;
+}
+.orderdiv {
+  flex: 20%;
+  background-color: rgb(194, 209, 209);
 }
 
 .figure {
