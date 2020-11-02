@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
+import GoogleBtn from "./GoogleBtn.js";
 
 import Mainpage from "./Mainpage";
 
@@ -70,6 +71,7 @@ export default function Main() {
     <div>
       <div className="mainpage">
         <h1>Be vegetarian</h1>
+        <GoogleBtn />
         <Link className="button" to="/Menu">
           Menu
         </Link>
@@ -83,7 +85,7 @@ export default function Main() {
         <div className="infodiv">
           <p>
             Write us at:
-            <a href="mailto:babita.singh1@gmail.com">babita</a>{" "}
+            <a href="babita.singh1@gmail.com">babita.singh1@gmail.com</a>{" "}
           </p>
           <p>Address: Meentweg 63,De Meern </p>
           <p>Contact us: 0682471394</p>
