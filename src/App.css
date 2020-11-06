@@ -65,9 +65,10 @@ h3 {
 
 .infodiv {
   columns: 100px 3;
-  column-gap: 80px;
+  column-gap: 400px;
   column-rule: 4px double #ff00ff;
   display: flex;
+  padding: 5px;
 
   color: #ff00ff;
 }
@@ -77,6 +78,7 @@ h3 {
   column-gap: 0px;
   column-rule: 10px double #ff00ff;
   display: flex;
+ 
 }
 
 .photoGrid {
@@ -90,6 +92,7 @@ h3 {
 .orderdiv {
   flex: 20%;
   background-color: rgb(194, 209, 209);
+  
 }
 
 .figure {
@@ -124,7 +127,6 @@ h3 {
   flex-basis: 48%;
   color: rgb(255, 0, 191);
   font-size: 40px;
-
   line-height: 2;
   padding: 5px;
 }
