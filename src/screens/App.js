@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
-import GoogleBtn from "./GoogleBtn.js";
 
 import Mainpage from "./Mainpage";
 
